@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyHiltApp</string>
+    <string name="hello">Hello World!</string>
+
+    <string name="osama">osama</string>
+    <string name="activity">Activit:</string>
+    <string name="accessibility">Accessibility:</string>
+    <string name="participants">Participants:</string>
+    <string name="type">Type:</string>
+    <string name="price">Price:</string>
+    <string name="seemoredetails">See More Details</string>
+    <string name="msg">Are you sure wants to delete this activity?</string>
+    <string name="del">Delete Activity</string>
+    <string name="ok">Yes</string>
+    <string name="no">NO</string>
+</resources>

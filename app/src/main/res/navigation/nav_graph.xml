@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myhiltapp.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/homefragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_activityDetailsFragment"
+            app:destination="@id/activityDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityDetailsFragment"
+        android:name="com.example.myhiltapp.fragment.ActivityDetailsFragment"
+        android:label="Activity_Details"
+        tools:layout="@layout/activity_detailsfragment" >
+        <action
+            android:id="@+id/action_activityDetailsFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment"
+
+
+
+            />
+        <action
+            android:id="@+id/action_activityDetailsFragment_to_randomActivityFragment"
+            app:destination="@id/randomActivityFragment" />
+        <argument
+            android:name="randomactivity"
+            app:argType="com.example.myhiltapp.model.ResponseActivity"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomActivityFragment"
+        android:name="com.example.myhiltapp.fragment.RandomActivityFragment"
+        android:label="Random_Activity"
+        tools:layout="@layout/random_activityfragment" >
+        <action
+            android:id="@+id/action_randomActivityFragment_to_activityDetailsFragment"
+            app:destination="@id/activityDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.myhiltapp.fragment.FavouriteFragment"
+        android:label="Favourite"
+        tools:layout="@layout/favouritefragment" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_activityDetailsFragment"
+            app:destination="@id/activityDetailsFragment"
+
+
+            />
+    </fragment>
+</navigation>
